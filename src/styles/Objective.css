@@ -4,7 +4,7 @@
 
 
 p{
-    width:inherit; /* width: 100px; */
+    width:inherit;
     white-space: pre-wrap;
     word-wrap:break-word; 
 }
