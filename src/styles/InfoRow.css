@@ -1,0 +1,40 @@
+
+
+.gridContainer{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0.5fr; 
+    grid-template-areas: "title title Location " 
+                         "Role Role Date"
+                         "Description Description Description";  
+}
+
+
+.IRTitle{
+    grid-area: title; 
+    font-weight: bold;   
+}
+
+.IRRole{
+    grid-area: Role; 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+.IRDesc{
+    grid-area: Description; 
+    margin: 0px; 
+    padding: 0px; 
+    font-style: italic; 
+}
+
+.IRLoc{
+    grid-area: Location;
+    justify-self: end;
+}
+.IRDate{
+    grid-area: Date;
+    justify-self: end; 
+    margin: 0px; 
+    padding: 0px; 
+}

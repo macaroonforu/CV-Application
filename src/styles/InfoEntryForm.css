@@ -1,0 +1,26 @@
+.EducationFormContainer{
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 10px; 
+    padding: 10px; 
+    gap: 5px; 
+}
+
+.EducationFormInput{
+    border-radius: 10px; 
+    border: 2px solid black; 
+    height: 20px; 
+}
+
+.EducationFormButtonContainer{
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.deleteEducation{
+    background-color: #F16767; 
+}
+
+.saveEducation{
+    background-color: #F29727; 
+}

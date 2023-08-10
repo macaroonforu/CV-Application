@@ -1,0 +1,40 @@
+.mainContainer{
+    display: flex; 
+    gap: 20px; 
+    justify-content: space-around; 
+}
+
+Resume{
+    align-self: right; 
+}
+
+.forms{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px;
+    align-items: center; 
+    align-content: stretch; 
+}
+
+
+.bigEntries{
+    display: flex; 
+    width: 100%; 
+    justify-content: space-around;
+    gap: 30px
+}
+
+@media only screen and (max-width: 1500px){
+    .bigEntries{
+        flex-direction: column; 
+    }
+}
+@media only screen and (max-width: 700px){
+    .mainContainer{
+        flex-direction: column; 
+        align-items: center; 
+    }
+    p{
+        font-size: small; 
+    }
+}

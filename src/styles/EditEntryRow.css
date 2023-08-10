@@ -1,0 +1,19 @@
+.editEducationRowContainer{
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
+    width: calc(100% - 20px) ; 
+    padding: 10px; 
+}
+
+.editEducationButton{
+    border-radius: 10px; 
+    padding: 8px; 
+    float: right; 
+
+}
+
+.editTitle{
+    flex-shrink: 1; 
+    margin-right: 5px; 
+}

@@ -1,0 +1,48 @@
+.EducationPkgdiv{
+    background-color: #77E4D4;
+}
+
+.ExperiencePkgdiv{
+    background-color: #998CEB;  
+}
+
+.educationList{
+    list-style: none; 
+    padding-inline-start: 0px; 
+    width: 100%; 
+}
+
+.edForm{
+    text-align: center; 
+}
+
+.listContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+}
+
+.EducationPkgdiv, .ExperiencePkgdiv{
+    width: calc(50% - 40px); 
+    border-radius: 10px; 
+    padding: 10px;  
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.addButton{
+    width: 50%; 
+}
+
+@media only screen and (max-width: 1500px){
+    .EducationPkgdiv, .ExperiencePkgdiv{
+        width: calc(100% - 20px); 
+    }
+    p{
+        font-size: smaller; 
+    }
+}
+

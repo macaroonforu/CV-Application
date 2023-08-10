@@ -1,0 +1,62 @@
+
+{
+    "Objective": {
+        "title": "Objective", 
+        "description": "A very enthusiastic computer engineering student who is passionate about full-stack web development. "
+    },  
+
+    
+    "headerInfo":{
+        "name": "Barbara Millicent Roberts", 
+        "email": "barbara.roberts@yahoo.com", 
+        "number": "123-456-7890", 
+        "city": "New York City, NY"
+    },
+
+    "Education": [
+        {
+        "state": "save", 
+        "id": "1", 
+        "title": "LaGuardia Highschool", 
+        "role": "High School Diploma", 
+        "city": "Queens, NY", 
+        "start": "2017-09-12", 
+        "end": "2021-04-11", 
+        "desc": "Was president of the swim team, student council, fashion club, robotics clun" 
+        }, 
+        {
+        "state": "save", 
+        "id": "2", 
+        "title": "University of Toronto", 
+        "role": "Bachelor of Applied Science", 
+        "city": "Toronto, ON", 
+        "start": "2021-09-12", 
+        "end": "2026-04-11", 
+        "desc": "Third year computer engineering student"
+        }
+    ], 
+    "Experience": [
+        {
+        "state": "save", 
+        "id": "1", 
+        "title": "Mattel", 
+        "role": "Summer Student", 
+        "city": "Los Angeles, CA", 
+        "start": "2022-05-08", 
+        "end": "2022-08-30", 
+        "desc": "Helping to design barbie dolls." 
+        }, 
+        {
+        "state": "save", 
+        "id": "2", 
+        "title": "City of New York", 
+        "role": "Camp Counsellor", 
+        "city": "New York City, NY", 
+        "start": "2022-05-13", 
+        "end": "2023-01-10", 
+        "desc": "Camp Counsellor in the winter and summer break camps"
+        }
+    ]
+
+
+}

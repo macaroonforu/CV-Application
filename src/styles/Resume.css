@@ -1,0 +1,13 @@
+.resumeContainer{
+    height: 27.94cm; 
+    width: 21.59cm; 
+    padding: 10px; 
+    border: 3px solid black; 
+}
+
+
+@media only screen and (max-width: 1500px){
+    .resumeContainer{
+        width: 15cm; 
+    }
+}

@@ -1,0 +1,10 @@
+.Objective{ 
+    width: inherit; 
+}
+
+
+p{
+    width:inherit; /* width: 100px; */
+    white-space: pre-wrap;
+    word-wrap:break-word; 
+}
