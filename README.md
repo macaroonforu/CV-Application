@@ -10,3 +10,6 @@ View at this [website](https://cv-application2.vercel.app/)
 
 
 
+Debugging: An issue is that with the experience form, if you click 'edit entry', it will let you edit both entries on the page instead of just displaying a single form like it should. This confuses me because education form is not doing that but the code is identical. 
+
+Somehow, the state of the education form is not being updated properly. When I hit save, the field must still have the value editing=true, which is why forms are being rendered. 
