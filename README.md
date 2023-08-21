@@ -15,3 +15,4 @@ Debugging: An issue is that with the experience form, if you click 'edit entry',
 Somehow, the state of the education form is not being updated properly. When I hit save, the field must still have the value editing=true, which is why forms are being rendered. \
 
 The state is not being updated properly, but I am not sure if it is the state of 'editing' or the state of save/edit of the individual entries. 
+The issue is that when you click 'Save this entry' it is not updating the property of a info section from state:edit to state:save. This is why forms are rendering. 
