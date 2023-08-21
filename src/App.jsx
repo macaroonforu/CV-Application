@@ -41,6 +41,7 @@ function App() {
       if (Experience.id === event.target.id){
         return {...Experience, [event.target.name]: event.target.value}; 
       }
+      console.log(Experience); 
       return Experience; 
     }); 
     setExperienceArray(newExperienceArray); 
@@ -50,6 +51,7 @@ function App() {
       if (Education.id === event.target.id) {
         return {...Education, [event.target.name]: event.target.value}; 
       }
+      console.log(Education); 
       return Education; 
     }); 
     setEducationArray(newEducationArray); 
