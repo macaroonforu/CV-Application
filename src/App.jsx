@@ -61,7 +61,7 @@ const handleExSave = (event) => {
     const newExperienceArray = ExperienceArray.map((Experience) => {
       const Savebutton = event.target[7]; 
       if(Experience.id === Savebutton.id){
-        return {...Education, [Savebutton.name]: Savebutton.value}; 
+        return {...Experience, [Savebutton.name]: Savebutton.value}; 
       }
       return Experience; 
     }); 
