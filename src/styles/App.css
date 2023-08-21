@@ -6,13 +6,12 @@
     display: flex; 
     gap: 20px; 
     justify-content: space-around; 
-    overflow: scroll; 
 }
 
 .resume{
     display: flex; 
     height: 29.7cm; 
-    width: minmax(100%, 21.59cm);
+    max-width: 21.59cm; 
     flex-wrap: wrap; 
     margin-left: 10px; 
     align-self: right;  
