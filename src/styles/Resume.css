@@ -1,6 +1,6 @@
 .resumeContainer{
-    height: 27.94cm; 
-    width: 21.59cm; 
+    min-height: 27.94cm; 
+    min-width: 21.59cm; 
     padding: 10px; 
     border: 3px solid black; 
     overflow: hidden;
@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 1500px){
     .resumeContainer{
-        min-width: 15cm; 
+        max-width: 15cm; 
         overflow: hidden;
     }
 }
