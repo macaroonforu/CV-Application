@@ -41,7 +41,6 @@ function App() {
       if (Experience.id === event.target.id){
         return {...Experience, [event.target.name]: event.target.value}; 
       }
-      console.log(Experience); 
       return Experience; 
     }); 
     setExperienceArray(newExperienceArray); 
@@ -51,7 +50,6 @@ function App() {
       if (Education.id === event.target.id) {
         return {...Education, [event.target.name]: event.target.value}; 
       }
-      console.log(Education); 
       return Education; 
     }); 
     setEducationArray(newEducationArray); 
@@ -60,10 +58,8 @@ function App() {
 //Handling a Save 
 const handleExSave = (event) => {
     event.preventDefault(); 
-    console.log(event); 
     const newExperienceArray = ExperienceArray.map((Experience) => {
       const Savebutton = event.target;  
-      console.log(Savebutton); 
       if(Experience.id === Savebutton.id){
         return {...Experience, [Savebutton.name]: Savebutton.value}; 
       }
@@ -74,7 +70,7 @@ const handleExSave = (event) => {
   const handleEdSave = (event) => {
     event.preventDefault(); 
     const newEducationArray= EducationArray.map((Education) => {
-      const Savebutton = event.target[7];
+      const Savebutton = event.target;
       if (Education.id === Savebutton.id) {
         return {...Education, [Savebutton.name]: Savebutton.value}; 
       }
