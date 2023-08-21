@@ -5,11 +5,9 @@
 .mainContainer{
     display: flex; 
     gap: 20px; 
-    width: 95vw; 
     flex-wrap: wrap; 
     justify-content: space-around; 
     overflow: scroll; 
-    margin-right: 0px; 
 }
 .resume{
     display: flex;
