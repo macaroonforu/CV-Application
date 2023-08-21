@@ -21,13 +21,30 @@ function App() {
     setObjective({...Objective, title: event.target.name, description: event.target.value});
   }
 
-
+  //Initializing The State 
+  const [ExperienceArray, setExperienceArray] = useState(Person.Experience.map((Experience) => { return { ...Experience, id: uuid()}})); 
   const [EducationArray, setEducationArray] = useState(Person.Education.map((Education) => {return {...Education, id: uuid()}}));
+
+  //Adding an Education or Experience to the Resume 
   const handleNewEd = (event) => {
     event.preventDefault(); 
     setEducationArray([...EducationArray, {state: 'edit', id: uuid(), title: "", role: "", desc: "", city: "", start: "", end: ""}]); 
   }
+   const handleNewEx = (event) => {
+    event.preventDefault(); 
+    setExperienceArray([...ExperienceArray, {state: 'edit', id: uuid(), title: "", role: "", desc: "", city: "", start: "", end: ""}])
+  }
 
+  //Handle Updating a Experience or Education 
+    const handleExChange = (event) => {
+    const newExperienceArray = ExperienceArray.map((Experience) => {
+      if (Experience.id === event.target.id){
+        return {...Experience, [event.target.name]: event.target.value}; 
+      }
+      return Experience; 
+    }); 
+    setExperienceArray(newExperienceArray); 
+  }
   const  handleEdChange = (event) =>{
     const newEducationArray= EducationArray.map((Education) => {
       if (Education.id === event.target.id) {
@@ -38,10 +55,18 @@ function App() {
     setEducationArray(newEducationArray); 
   }
 
-  const handleEdDelete = (event) => {
-    setEducationArray(EducationArray.filter(Education =>Education.id !== event.target.id)); 
+//Handling a Save 
+const handleExSave = (event) => {
+    event.preventDefault(); 
+    const newExperienceArray = ExperienceArray.map((Experience) => {
+      const Savebutton = event.target[7]; 
+      if(Experience.id === Savebutton.id){
+        return {...Education, [Savebutton.name]: Savebutton.value}; 
+      }
+      return Experience; 
+    }); 
+    SetExperienceArray(newExperienceArray); 
   }
-
   const handleEdSave = (event) => {
     event.preventDefault(); 
     const newEducationArray= EducationArray.map((Education) => {
@@ -54,37 +79,15 @@ function App() {
     setEducationArray(newEducationArray); 
   }
 
-  const [ExperienceArray, setExperienceArray] = useState(Person.Experience.map((Experience) => { return { ...Experience, id: uuid()}})); 
-  const handleNewEx = (event) => {
-    event.preventDefault(); 
-    setExperienceArray([...ExperienceArray, {state: 'edit', id: uuid(), title: "", role: "", desc: "", city: "", start: "", end: ""}])
+  //Deleting an Education or Experience 
+   const handleEdDelete = (event) => {
+    setEducationArray(EducationArray.filter(Education =>Education.id !== event.target.id)); 
   }
-
-  const handleExChange = (event) => {
-    const newExperienceArray = ExperienceArray.map((Experience) => {
-      if (Experience.id === event.target.id){
-        return {...Experience, [event.target.name]: event.target.value}; 
-      }
-      return Experience; 
-    }); 
-    setExperienceArray(newExperienceArray); 
-  }
-
   const handleExDelete = (event) => {
     setExperienceArray(ExperienceArray.filter(Experience => Experience.id != event.target.id)); 
   }
 
-  const handleExSave = (event) => {
-    event.preventDefault(); 
-    const newExperienceArray = ExperienceArray.map((Experience) => {
-      const Savebutton = event.target[7]; 
-      if(Experience.id === Savebutton.id){
-        return {...Education, [Savebutton.name]: Savebutton.value}; 
-      }
-      return Experience; 
-    }); 
-    SetExperienceArray(newExperienceArray); 
-  }
+  
 
   const loadResume = (event) => {
     event.preventDefault(); 
