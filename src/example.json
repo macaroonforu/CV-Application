@@ -2,61 +2,69 @@
 {
     "Objective": {
         "title": "Objective", 
-        "description": "A very enthusiastic computer engineering student who is passionate about full-stack web development. "
+        "description": "A Canadian poet, novelist, literary critic, essayist, teacher, environmental activist, and inventor."
     },  
 
     
     "headerInfo":{
-        "name": "Barbara Millicent Roberts", 
-        "email": "barbara.roberts@yahoo.com", 
+        "name": "Margaret Atwood", 
+        "email": "margaret.atwood@gmail.com", 
         "number": "123-456-7890", 
-        "city": "New York City, NY"
+        "city": "Toronto, ON"
     },
 
     "Education": [
         {
         "state": "save", 
         "id": "1", 
-        "title": "LaGuardia Highschool", 
-        "role": "High School Diploma", 
-        "city": "Queens, NY", 
-        "start": "2017-09-12", 
-        "end": "2021-04-11", 
-        "desc": "Was president of the swim team, student council, fashion club, robotics clun" 
-        }, 
+        "title": "University of Toronto", 
+        "role": "BA (honors)", 
+        "city": "Toronto, ON", 
+        "start": "1957-09-12", 
+        "end": "1961-04-11", 
+        "desc": "Studied at Victoria College resulting in a major in English with a double-minor in French and Philosophy"
+        }
         {
         "state": "save", 
         "id": "2", 
-        "title": "University of Toronto", 
-        "role": "Bachelor of Applied Science", 
-        "city": "Toronto, ON", 
-        "start": "2021-09-12", 
-        "end": "2026-04-11", 
-        "desc": "Third year computer engineering student"
-        }
+        "title": "Harvard University", 
+        "role": "MA", 
+        "city": "Cambridge, MA", 
+        "start": "1961-09-08", 
+        "end": "1962-04-05", 
+        "desc": "Recipient of the Woodrow Wilson Fellowship, Master's degree in English Literature from Radcliffe College" 
+        }, 
+   
     ], 
     "Experience": [
         {
         "state": "save", 
         "id": "1", 
-        "title": "Mattel", 
-        "role": "Summer Student", 
-        "city": "Los Angeles, CA", 
-        "start": "2022-05-08", 
-        "end": "2022-08-30", 
-        "desc": "Helping to design barbie dolls." 
+        "title": "University of Toronto", 
+        "role": "Writer in Residence", 
+        "city": "Toronto, ON", 
+        "start": "1972-09-05", 
+        "end": "1973-04-01", 
+        "desc": "Shared professional insights with faculty, mentored students, hosted workshops, developed content" 
         }, 
         {
         "state": "save", 
         "id": "2", 
-        "title": "City of New York", 
-        "role": "Camp Counsellor", 
-        "city": "New York City, NY", 
-        "start": "2022-05-13", 
-        "end": "2023-01-10", 
-        "desc": "Camp Counsellor in the winter and summer break camps"
+        "title": "University of British Coloumbia", 
+        "role": "Lecturer", 
+        "city": "Vancouver, BC", 
+        "start": "1964-09-07", 
+        "end": "1965-04-29", 
+        "desc": "Course instructor in English classes (ENGL319, ENGL340, ENGL315) in the Faculty of Creative and Cultural Studies."
+        },
+        "state": "save", 
+        "id": "2", 
+        "title": "The Handmaid's Tale", 
+        "role": "Author", 
+        "city": "Toronto, ON", 
+        "start": "1985-01-01", 
+        "end": "1985-01-01", 
+        "desc": "A futuristic dystopian novel exploring themes of subjugated women in a patriarchal society, and the various means by which women resist and try to gain individuality and independence"
         }
     ]
-
-
 }
