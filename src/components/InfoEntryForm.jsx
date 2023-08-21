@@ -25,7 +25,7 @@ function InfoEntryForm({formData, handleEntryChange, handleEntryDelete, handleEn
       <div className="EducationFormButtonContainer"> 
         
       <button className="deleteEducation" id={formData.id} onClick={handleEntryDelete} type="text">Delete This Entry</button>
-      <button className="saveEducation" onClick={handleEntrySave} name="state" value="save" id={formData.id} type="submit">Save This Entry</button>
+      <button className="saveEducation" name="state" value="save" id={formData.id} type="submit">Save This Entry</button>
       </div>
       </form>
   );       
