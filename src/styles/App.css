@@ -9,7 +9,7 @@
     flex-wrap: wrap; 
     justify-content: space-around; 
     overflow: scroll; 
-    margin-right: 10px; 
+    margin-right: 0px; 
 }
 .resume{
     display: flex;
