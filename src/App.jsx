@@ -69,7 +69,7 @@ const handleExSave = (event) => {
       }
       return Experience; 
     }); 
-    SetExperienceArray(newExperienceArray); 
+    setExperienceArray(newExperienceArray); 
   }
   const handleEdSave = (event) => {
     event.preventDefault(); 
