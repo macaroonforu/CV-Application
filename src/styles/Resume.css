@@ -1,6 +1,6 @@
 .resumeContainer{
     min-height: 20cm; 
-   /* max-width: 21.59cm;  */
+    width: inherit; 
     padding: 10px; 
     border: 3px solid black; 
     overflow-y: hidden;
