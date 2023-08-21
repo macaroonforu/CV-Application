@@ -7,6 +7,7 @@
     overflow: scroll; 
 }
 .resume{
+    display: flex;
     align-self: right; 
 }
 .forms{
