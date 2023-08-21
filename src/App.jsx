@@ -59,7 +59,7 @@ function App() {
 const handleExSave = (event) => {
     event.preventDefault(); 
     const newExperienceArray = ExperienceArray.map((Experience) => {
-      const Savebutton = event.submitter;  
+      const Savebutton = event.nativeEvent.submitter;  
       if(Experience.id === Savebutton.id){
         return {...Experience, [Savebutton.name]: Savebutton.value}; 
       }
