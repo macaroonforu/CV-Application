@@ -16,4 +16,5 @@
 .editTitle{
     flex-shrink: 1; 
     margin-right: 5px; 
+    font-weight: bold; 
 }
