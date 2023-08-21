@@ -10,6 +10,7 @@
 }
 .resume{
     display: flex;
+    flex-wrap: wrap; 
     align-self: right; 
     overflow: scroll; 
 }
