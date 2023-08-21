@@ -10,6 +10,7 @@
 }
 .resume{
     display: flex; 
+    width: minmax(100%, 21.59cm);
     flex-wrap: wrap; 
     margin-left: 10px; 
     align-self: right; 
