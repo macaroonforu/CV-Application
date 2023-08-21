@@ -71,7 +71,7 @@ const handleExSave = (event) => {
     console.log(e); 
     event.preventDefault(); 
     const newEducationArray= EducationArray.map((Education) => {
-      const Savebutton = event.target;
+      const Savebutton = event.nativeEvent.submitter; 
       if (Education.id === Savebutton.id) {
         return {...Education, [Savebutton.name]: Savebutton.value}; 
       }
