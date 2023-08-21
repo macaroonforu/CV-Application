@@ -68,6 +68,7 @@ const handleExSave = (event) => {
     setExperienceArray(newExperienceArray); 
   }
   const handleEdSave = (event) => {
+    console.log(e); 
     event.preventDefault(); 
     const newEducationArray= EducationArray.map((Education) => {
       const Savebutton = event.target;
