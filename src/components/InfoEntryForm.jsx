@@ -28,7 +28,7 @@ function InfoEntryForm({formData, handleEntryChange, handleEntryDelete, handleEn
       <button className="saveEducation" name="state" onClick={handleEntrySave} value="save" id={formData.id} type="submit">Save This Entry</button>
       </div>
       </form>
-  );
+  );       
   
 }
 export default InfoEntryForm
