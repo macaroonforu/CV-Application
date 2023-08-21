@@ -9,6 +9,8 @@
     overflow: scroll; 
 }
 .resume{
+    display: flex; 
+    flex-wrap: wrap; 
     margin-left: 10px; 
     align-self: right; 
     overflow: scroll; 
