@@ -22,6 +22,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
 
   const saveEntry = (e) => {
     setEditing(false); 
+    console.log(e); 
     SaveEntry(e); 
   }
 
