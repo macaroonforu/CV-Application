@@ -1,6 +1,7 @@
 .mainContainer{
     display: flex; 
     gap: 20px; 
+    width: 100vw; 
     justify-content: space-around; 
     overflow: auto; 
 }
