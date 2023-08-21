@@ -3,13 +3,14 @@
     min-width: 21.59cm; 
     padding: 10px; 
     border: 3px solid black; 
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll; 
+    max-width: 100%; 
 }
 
 
 @media only screen and (max-width: 1500px){
     .resumeContainer{
         max-width: 15cm; 
-        overflow: hidden;
     }
 }
