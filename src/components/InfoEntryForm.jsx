@@ -5,16 +5,16 @@ function InfoEntryForm({formData, handleEntryChange, handleEntryDelete, handleEn
     return (
       <form className="EducationFormContainer" onSubmit={handleEntrySave}>
       { type=='education'? <label>School</label>: <label>Company/Organization</label>} 
-      <input className="EducationFormInput" maxLength="50" type="text" id={formData.id} name="title" value={formData.title} onChange={handleEntryChange}required/>
+      <input className="EducationFormInput" maxLength="50" type="text" id={formData.id} name="title" value={formData.title} onChange={handleEntryChange} required/>
     
       { type=='education'? <label>Degree Completed or in Progress</label>: <label>Role</label>} 
-      <input className="EducationFormInput" maxLength="35" type="text" id={formData.id} name="role" value={formData.role} onChange={handleEntryChange}required/>
+      <input className="EducationFormInput" maxLength="35" type="text" id={formData.id} name="role" value={formData.role} onChange={handleEntryChange} required/>
 
       <label>City</label>
       <input className="EducationFormInput" maxLength="15"type="text" id={formData.id} name="city" value={formData.city} onChange={handleEntryChange}/>
 
       <label>Start Date</label>
-      <input className="EducationFormInput" type="date" id={formData.id} name="start" value={formData.start} onChange={handleEntryChange}required/>
+      <input className="EducationFormInput" type="date" id={formData.id} name="start" value={formData.start} onChange={handleEntryChange} required/>
 
       <label>End Date</label>
       <input className="EducationFormInput" type="date" id={formData.id} name="end" value={formData.end} onChange={handleEntryChange} required/>
