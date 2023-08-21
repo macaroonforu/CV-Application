@@ -17,7 +17,7 @@ function InfoEntryForm({formData, handleEntryChange, handleEntryDelete, handleEn
       <input className="EducationFormInput" type="date" id={formData.id} name="start" value={formData.start} onChange={handleEntryChange} required/>
 
       <label>End Date</label>
-      <input className="EducationFormInput" type="date" id={formData.id} name="end" value={formData.end} onChange={handleEntryChange} required/>
+      <input className="EducationFormInput" type="date" id={formData.id} name="end" value={formData.end} onChange={handleEntryChange}/>
 
       <label>Brief Description</label>
       <input className="EducationFormInput" maxLength="150" type="location" id={formData.id} name="desc" value={formData.desc} onChange={handleEntryChange} />
