@@ -3,11 +3,13 @@
     width: 21.59cm; 
     padding: 10px; 
     border: 3px solid black; 
+    overflow: hidden;
 }
 
 
 @media only screen and (max-width: 1500px){
     .resumeContainer{
         min-width: 15cm; 
+        overflow: hidden;
     }
 }
