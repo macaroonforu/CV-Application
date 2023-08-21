@@ -25,8 +25,7 @@
 .IRDesc{
     grid-area: Description; 
     margin: 0px; 
-    padding: 0px; 
-    font-style: italic; 
+    padding: 0px;  
     font-weight: lighter; 
 }
 
