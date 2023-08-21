@@ -58,13 +58,13 @@
         "desc": "Course instructor in English classes (ENGL319, ENGL340, ENGL315) in the Faculty of Creative and Cultural Studies."
         },
         "state": "save", 
-        "id": "2", 
+        "id": "3", 
         "title": "The Handmaid's Tale", 
         "role": "Author", 
         "city": "Toronto, ON", 
         "start": "1985-01-01", 
         "end": "1985-01-01", 
         "desc": "A futuristic dystopian novel exploring themes of subjugated women in a patriarchal society, and the various means by which women resist and try to gain individuality and independence"
-        }
+        },
     ]
 }
