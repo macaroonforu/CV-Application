@@ -8,14 +8,16 @@
     justify-content: space-around; 
     overflow: scroll; 
 }
+
 .resume{
     display: flex; 
+    height: 29.7cm; 
     width: minmax(100%, 21.59cm);
     flex-wrap: wrap; 
     margin-left: 10px; 
-    align-self: right; 
-    overflow: scroll; 
+    align-self: right;  
 }
+
 .forms{
     display: flex; 
     flex-wrap: wrap; 
