@@ -60,6 +60,7 @@ function App() {
 //Handling a Save 
 const handleExSave = (event) => {
     event.preventDefault(); 
+    console.log(event); 
     const newExperienceArray = ExperienceArray.map((Experience) => {
       const Savebutton = event.target[7]; 
       if(Experience.id === Savebutton.id){
