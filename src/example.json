@@ -12,16 +12,7 @@
 		"city": "Toronto, ON"
 	},
 
-	"Education": [{
-			"state": "save",
-			"id": "1",
-			"title": "University of Toronto",
-			"role": "BA (honors)",
-			"city": "Toronto, ON",
-			"start": "1957-09-12",
-			"end": "1961-04-11",
-			"desc": "Studied at Victoria College resulting in a major in English with a double-minor in French and Philosophy"
-		},
+	"Education": [
 		{
 			"state": "save",
 			"id": "2",
@@ -31,7 +22,18 @@
 			"start": "1961-09-08",
 			"end": "1962-04-05",
 			"desc": "Recipient of the Woodrow Wilson Fellowship, Master's degree in English Literature from Radcliffe College"
+		},
+		{
+			"state": "save",
+			"id": "1",
+			"title": "University of Toronto",
+			"role": "BA (honors)",
+			"city": "Toronto, ON",
+			"start": "1957-09-12",
+			"end": "1961-04-11",
+			"desc": "Studied at Victoria College resulting in a major in English with a double-minor in French and Philosophy"
 		}
+		
 	],
 	"Experience": [
 		{
