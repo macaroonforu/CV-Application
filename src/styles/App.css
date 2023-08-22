@@ -11,7 +11,7 @@
 .resume{
     display: flex; 
     height: 29.7cm; 
-    max-width: 21.59cm; 
+    width: 21.59cm; 
     flex-wrap: wrap; 
     margin-left: 10px; 
     align-self: right;  
@@ -42,8 +42,12 @@
     .mainContainer{
         flex-direction: column; 
         align-items: center; 
+        justify-content: stretch; 
     }
     p{
         font-size: small; 
+    }
+    .resume{
+        width: 100%; 
     }
 }
