@@ -38,11 +38,11 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
         <ul className="educationList">
           {
             Information.map((info) => { 
-              if (editing===true){
-                if(info.state ==='edit'){
-                  return <li className="edForm" key={info.id}><InfoEntryForm formData={info} handleEntryChange={editEntry} handleEntryDelete={deleteEntry} handleEntrySave={saveEntry} type={type}/></li>
-                }  
-              }
+              //if (editing===true){
+              if(info.state ==='edit'){
+                return <li className="edForm" key={info.id}><InfoEntryForm formData={info} handleEntryChange={editEntry} handleEntryDelete={deleteEntry} handleEntrySave={saveEntry} type={type}/></li>
+              }  
+              //}
               else{
                 return  <li className="svForm" key={info.id}><EditEntryRow formData={info} handleEntryChange={editEntry}/></li> 
               }
