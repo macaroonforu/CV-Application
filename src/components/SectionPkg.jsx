@@ -12,6 +12,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
   const [visible, setVisible] = useState(true); 
 
   const addEntry = (e) => {
+    setVisible(false);
     setEditing(true); 
     AddEntry(e); 
   }
@@ -28,6 +29,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
   }
 
   const editEntry = (e)=>{
+    //setVisible(false);
     setEditing(true); 
     UpdateEntry(e); 
   }
@@ -41,7 +43,6 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
             Information.map((info) => { 
               if (editing===true){
                 if(info.state ==='edit'){
-                  //setVisible(false);
                   //setEditing(false); 
                   return <li className="edForm" key={info.id}><InfoEntryForm formData={info} handleEntryChange={editEntry} handleEntryDelete={deleteEntry} handleEntrySave={saveEntry} type={type}/></li>
                 }  
@@ -55,7 +56,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
         </ul>
         
         </div>
-        {!editing && <button className="addButton" onClick={addEntry}>Add a New {type==='education' ? 'Education': 'Experience'}</button>}
+        {visible && <button className="addButton" onClick={addEntry}>Add a New {type==='education' ? 'Education': 'Experience'}</button>}
     </div>
   );
 }
