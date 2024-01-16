@@ -81,7 +81,7 @@ const handleExSave = (event) => {
 
   //Deleting an Education or Experience 
    const handleEdDelete = (event) => {
-    setEducationArray(EducationArray.filter(Education =>Education.id !== event.target.id)); 
+    setEducationArray(EducationArray.filter(Education =>Education.id != event.target.id)); 
   }
   const handleExDelete = (event) => {
     setExperienceArray(ExperienceArray.filter(Experience => Experience.id != event.target.id)); 
