@@ -52,7 +52,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
         </ul>
         
         </div>
-        {!editing && <button className="addButton" onClick={addEntry}>Add a New {type==='education' ? 'Education': 'Experience'}</button>}
+        {(!editing || !Information) && <button className="addButton" onClick={addEntry}>Add a New {type==='education' ? 'Education': 'Experience'}</button>}
     </div>
   );
 }
