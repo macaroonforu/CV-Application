@@ -90,7 +90,7 @@ const handleExSave = (event) => {
   
 
   const loadResume = (event) => {
-    //event.preventDefault(); 
+    event.preventDefault(); 
     setheaderInfo(Person.headerInfo); 
     setObjective(Person.Objective); 
     setEducationArray(Person.Education.map((Education) => {return {...Education, id: uuid()}})); 
@@ -98,7 +98,7 @@ const handleExSave = (event) => {
   }
   
   const clearResume = (event) => {
-    event.preventDefault(); 
+    //event.preventDefault(); 
     setheaderInfo({name: "",email: "",number: "", city: ""}); 
     setObjective({title: "Objective", description: ""}); 
     setEducationArray([]); 
