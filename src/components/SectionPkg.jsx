@@ -9,7 +9,7 @@ import { v4 as uuid} from 'uuid';
 function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry, type}) {
 
   const [editing, setEditing] = useState(false); 
-  const [visibile, setVisibile] = useState(true); 
+  const [visible, setVisible] = useState(true); 
 
   const addEntry = (e) => {
     setEditing(true); 
@@ -41,7 +41,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
             Information.map((info) => { 
               if (editing===true){
                 if(info.state ==='edit'){
-                  setVisibile(false);
+                  setVisible(false);
                   setEditing(false); 
                   return <li className="edForm" key={info.id}><InfoEntryForm formData={info} handleEntryChange={editEntry} handleEntryDelete={deleteEntry} handleEntrySave={saveEntry} type={type}/></li>
                 }  
@@ -55,7 +55,7 @@ function SectionPkg({Information, AddEntry, UpdateEntry, DeleteEntry, SaveEntry,
         </ul>
         
         </div>
-        {visibile && <button className="addButton" onClick={addEntry}>Add a New {type==='education' ? 'Education': 'Experience'}</button>}
+        {visible && <button className="addButton" onClick={addEntry}>Add a New {type==='education' ? 'Education': 'Experience'}</button>}
     </div>
   );
 }
